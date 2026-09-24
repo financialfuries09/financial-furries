@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Financial Furries — Gain financial knowledge. Be furious. Clear, practical financial news and education without the jargon.">
+  <meta name="theme-color" content="#0b0d12">
+  <title>Financial Furries — Gain financial knowledge. Be furious.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ticker">
+    <div class="ticker-track">
+      <span>NIFTY 50 <b>25,187.45</b> <i class="up">▲ 0.42%</i></span>
+      <span>SENSEX <b>82,451.20</b> <i class="up">▲ 0.31%</i></span>
+      <span>USD/INR <b>89.12</b> <i class="down">▼ 0.08%</i></span>
+      <span>GOLD <b>₹1,24,580</b> <i class="up">▲ 0.17%</i></span>
+      <span>BTC <b>$112,430</b> <i class="up">▲ 1.12%</i></span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#">
+      <div class="logo">🦊</div>
+      <div>
+        <div class="brand-name">FINANCIAL <span>FURRIES</span></div>
+        <div class="tagline">Gain financial knowledge. Be furious.</div>
+      </div>
+    </a>
+    <nav>
+      <a href="#latest">Latest</a>
+      <a href="#markets">Markets</a>
+      <a href="#money">Money</a>
+      <a href="#business">Business</a>
+      <a href="#learn">Learn</a>
+    </nav>
+    <button class="search-btn" id="searchBtn" aria-label="Search">⌕</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> FINANCE, WITHOUT THE NOISE</div>
+        <h1>Know your money.<br><em>Own your decisions.</em></h1>
+        <p>Sharp financial news, practical explainers and market context for people who want to understand money—not just scroll past headlines.</p>
+        <div class="hero-actions">
+          <a class="primary" href="#latest">Explore the latest <span>→</span></a>
+          <a class="secondary" href="#learn">Learn finance <span>↗</span></a>
+        </div>
+      </div>
+      <div class="fox-card">
+        <div class="fox-glow"></div>
+        <div class="fox">🦊</div>
+        <div class="fox-caption"><b>Stay curious.</b><br>Question the headline.</div>
+      </div>
+    </section>
+
+    <section class="section" id="markets">
+      <div class="section-head">
+        <div><span class="kicker">MARKET PULSE</span><h2>What the numbers are saying</h2></div>
+        <span class="updated">Demo data · replace with verified live data before publishing</span>
+      </div>
+      <div class="market-grid">
+        <article class="market-card"><span>NIFTY 50</span><strong>25,187.45</strong><b class="up">+105.38 · +0.42%</b><div class="spark">╱╲╱╲╱╲╱╲╱</div></article>
+        <article class="market-card"><span>SENSEX</span><strong>82,451.20</strong><b class="up">+254.61 · +0.31%</b><div class="spark">╲╱╲╱╲╱╲╱╲</div></article>
+        <article class="market-card"><span>USD / INR</span><strong>89.12</strong><b class="down">−0.07 · −0.08%</b><div class="spark">╱╲╲╱╲╱╲╱╲</div></article>
+        <article class="market-card"><span>GOLD / 10G</span><strong>₹1,24,580</strong><b class="up">+0.17%</b><div class="spark">╲╱╱╲╱╲╱╲╱</div></article>
+      </div>
+    </section>
+
+    <section class="featured section" id="latest">
+      <div class="section-head">
+        <div><span class="kicker">THE FRONT PAGE</span><h2>Stories worth your attention</h2></div>
+        <button class="filter" data-filter="all">All stories</button>
+      </div>
+      <div class="story-layout">
+        <article class="lead-story story" data-category="Markets">
+          <div class="story-art art-market"><span>MARKETS</span><div class="candles">▂ ▅ ▃ ▇ ▄ ▆ ▂ ▇</div></div>
+          <div class="story-meta"><span>MARKETS</span><time>8 min read</time></div>
+          <h3>When markets move fast, the headline is only the beginning</h3>
+          <p>A practical framework for separating a genuine market signal from short-term noise.</p>
+          <a href="#" class="read">Read the story →</a>
+        </article>
+        <div class="story-stack">
+          <article class="small-story story" data-category="Money">
+            <div class="mini-art art-money">₹</div>
+            <div><div class="story-meta"><span>MONEY</span><time>5 min read</time></div><h3>Emergency funds: the boring money decision that matters</h3><a href="#" class="read">Read →</a></div>
+          </article>
+          <article class="small-story story" data-category="Business">
+            <div class="mini-art art-business">↗</div>
+            <div><div class="story-meta"><span>BUSINESS</span><time>6 min read</time></div><h3>How to read a company's earnings without getting lost</h3><a href="#" class="read">Read →</a></div>
+          </article>
+          <article class="small-story story" data-category="Learn">
+            <div class="mini-art art-learn">?</div>
+            <div><div class="story-meta"><span>LEARN</span><time>4 min read</time></div><h3>Market cap, revenue and profit: three numbers to know</h3><a href="#" class="read">Read →</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="money">
+      <div class="section-head"><div><span class="kicker">FURIOUS READS</span><h2>Finance, explained like a human</h2></div></div>
+      <div class="cards">
+        <article class="info-card"><span class="number">01</span><span class="tag">PERSONAL FINANCE</span><h3>Budgeting isn't restriction. It's knowing where your money goes.</h3><p>A simple system for tracking spending without turning your life into a spreadsheet.</p><a href="#">Explore →</a></article>
+        <article class="info-card dark"><span class="number">02</span><span class="tag">INVESTING</span><h3>Risk isn't the same thing as volatility.</h3><p>Understand the difference before making decisions based on a red day in the market.</p><a href="#">Explore →</a></article>
+        <article class="info-card"><span class="number">03</span><span class="tag">ECONOMY</span><h3>Inflation: what it actually changes in your daily life.</h3><p>From groceries to borrowing costs, connect the economic headline to your wallet.</p><a href="#">Explore →</a></article>
+      </div>
+    </section>
+
+    <section class="learn section" id="learn">
+      <div class="learn-copy">
+        <span class="kicker">THE FURRY ACADEMY</span>
+        <h2>Build financial knowledge one concept at a time.</h2>
+        <p>No finance degree required. Start with the fundamentals, learn the vocabulary, then learn how the pieces connect.</p>
+        <div class="topic-list">
+          <a href="#"><span>01</span> Stocks & shares <b>→</b></a>
+          <a href="#"><span>02</span> Mutual funds & ETFs <b>→</b></a>
+          <a href="#"><span>03</span> Taxes & personal finance <b>→</b></a>
+          <a href="#"><span>04</span> Reading financial statements <b>→</b></a>
+        </div>
+      </div>
+      <div class="manifesto">
+        <div class="big-quote">“</div>
+        <p>Be curious enough to question the hype.<br>Be informed enough to make your own call.</p>
+        <span>— FINANCIAL FURRIES</span>
+      </div>
+    </section>
+
+    <section class="newsletter section">
+      <div><span class="kicker">THE DAILY FUR</span><h2>Useful finance. No spam.</h2><p>Get a short daily briefing of the stories and concepts worth knowing.</p></div>
+      <form id="newsletter"><input type="email" placeholder="Your email address" required><button>Subscribe →</button></form>
+      <small id="formMsg"></small>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><div class="logo">🦊</div><div><b>FINANCIAL FURRIES</b><span>Gain financial knowledge. Be furious.</span></div></div>
+    <div class="footer-links"><a href="#">About</a><a href="#">Contact</a><a href="#">Editorial policy</a><a href="#">Privacy</a><a href="#">Disclaimer</a></div>
+    <p class="disclaimer">Financial Furries is an informational publication. Nothing on this website constitutes personalized financial, investment, tax or legal advice. Verify important information with authoritative sources before acting.</p>
+    <p class="copyright">© 2026 Financial Furries. Built to make finance less confusing.</p>
+  </footer>
+
+  <div class="search-overlay" id="searchOverlay">
+    <button class="close-search" id="closeSearch">×</button>
+    <div class="search-box"><span>⌕</span><input id="searchInput" placeholder="Search Financial Furries..."></div>
+    <p>Try: markets, investing, inflation, stocks, budgeting</p>
+    <div id="searchResults"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
