@@ -1,144 +1,47 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#101010">
-<title>Financial Furries — Article Admin</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Financial Furries — Article Admin</title>
 <style>
 :root{--bg:#101010;--panel:#191919;--line:#303030;--text:#f5f1e8;--muted:#9b9b9b;--gold:#f5c542;--green:#7ed69b}
-*{box-sizing:border-box}
-html{background:var(--bg)}
-body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}
-a{color:var(--gold);text-decoration:none}
-.wrap{width:min(920px,100%);margin:0 auto;padding:28px 18px 70px}
-.top{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:24px}
-.brand{font-size:12px;letter-spacing:.18em;font-weight:900;color:var(--gold)}
-h1{font-size:clamp(34px,8vw,56px);line-height:1;margin:6px 0 0;letter-spacing:-.04em}
-h2{font-size:24px;margin:0 0 10px}
-.panel{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:22px;margin-top:18px;box-shadow:0 12px 35px rgba(0,0,0,.18)}
-.muted{color:var(--muted);font-size:14px}
-label{display:block;margin:18px 0 7px;font-weight:800}
-input,select,textarea{display:block;width:100%;min-height:46px;padding:12px 13px;border:1px solid #454545;border-radius:11px;background:#0d0d0d;color:#fff;font:inherit;outline:none}
-textarea{min-height:180px;resize:vertical}
-input:focus,select:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(245,197,66,.12)}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
-.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
-button{border:0;border-radius:999px;padding:12px 18px;font:inherit;font-weight:900;cursor:pointer}
-.primary{background:var(--gold);color:#111}
-.secondary{background:#303030;color:#fff}
-.danger{background:#6f2929;color:#fff}
-.status{min-height:24px;margin:13px 0 0;color:var(--green);font-weight:700}
-.article{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:15px 0;border-top:1px solid var(--line)}
-.article:first-child{border-top:0}
-.article-title{font-weight:850}
-.article-meta{color:var(--muted);font-size:13px;margin-top:3px}
-.article-actions{display:flex;gap:7px;flex-shrink:0}
-@media(max-width:650px){
- .wrap{padding:20px 14px 50px}
- .top{align-items:flex-start;flex-direction:column}
- .grid{grid-template-columns:1fr}
- .panel{padding:17px;border-radius:16px}
- .actions button{width:100%}
- .article{align-items:flex-start;flex-direction:column}
- .article-actions{width:100%}
- .article-actions button{flex:1}
-}
-<style> .guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}.guide{border-radius:16px;padding:18px;border:1px solid #303030;background:#111}.guide ul{margin:10px 0 0;padding-left:20px}.guide li{margin:7px 0;color:#ddd}.disclaimer{margin-top:18px;padding:16px;border-radius:14px;background:#111;border:1px solid #303030;color:#cfcfcf;font-size:13px}@media(max-width:650px){.guide-grid{grid-template-columns:1fr}}</style></style>
-</head>
-<body>
-<main class="wrap">
-<header class="top">
-  <div><div class="brand">FINANCIAL FURRIES</div><h1>Article Admin</h1></div>
-  <a href="index.html">← View website</a>
-</header>
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,sans-serif;line-height:1.5}.wrap{max-width:920px;margin:auto;padding:22px 15px 60px}a{color:var(--gold)}h1{font-size:42px;line-height:1}h2{margin-bottom:8px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:20px;margin:18px 0}.muted{color:var(--muted);font-size:14px}label{display:block;margin:15px 0 6px;font-weight:700}input,select,textarea{width:100%;padding:12px;border:1px solid #454545;border-radius:10px;background:#0d0d0d;color:#fff;font:inherit}textarea{min-height:150px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}button{border:0;border-radius:999px;padding:12px 17px;font-weight:800;cursor:pointer;margin:6px 6px 0 0}.primary{background:var(--gold);color:#111}.secondary{background:#303030;color:#fff}.danger{background:#6f2929;color:#fff}.status{color:var(--green);min-height:24px}.error{color:#ff7777}.article{padding:14px 0;border-top:1px solid var(--line)}.meta{color:var(--muted);font-size:13px}.guidegrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.guide{background:#111;border:1px solid var(--line);border-radius:14px;padding:15px}.note{background:#111;border:1px solid var(--line);padding:14px;border-radius:12px;font-size:13px}@media(max-width:650px){.grid,.guidegrid{grid-template-columns:1fr}h1{font-size:36px}}
+</style></head>
+<body><main class="wrap">
+<header><b style="color:#f5c542;letter-spacing:.15em">FINANCIAL FURRIES</b><h1>Article Admin</h1><a href="index.html">← View website</a></header>
 
-<section class="panel"><h2>🦊 Financial Furries Guidelines</h2><p class="muted">Use these rules whenever you publish financial information. Keep articles educational, factual, and clear about risks.</p><div class="guide-grid"><div class="guide do"><h3>🟢 DO</h3><ul><li>Explain financial concepts in simple language.</li><li>Use factual information and sources.</li><li>Explain risks as well as potential benefits.</li><li>Use historical data with dates and context.</li><li>Clearly label examples and opinions.</li></ul></div><div class="guide dont"><h3>🔴 DON'T</h3><ul><li>Promise or guarantee returns.</li><li>Tell readers personally to buy or sell an investment.</li><li>Present predictions as certainty.</li><li>Hide important risks, fees, or limitations.</li><li>Give personalized financial, tax, or legal advice.</li></ul></div></div><div class="disclaimer"><strong>Automatic article disclaimer:</strong> Information published by Financial Furries is for educational and informational purposes only and is not financial, investment, tax, or legal advice. Financial markets involve risk, and past performance does not guarantee future results.</div></section>
+<section class="panel"><h2>🦊 Financial Furries Guidelines</h2><p class="muted">Keep articles educational, factual, clear about risks, and properly sourced.</p>
+<div class="guidegrid"><div class="guide"><h3>🟢 DO</h3><ul><li>Explain concepts simply.</li><li>Use factual information and sources.</li><li>Explain risks and potential benefits.</li><li>Use dated historical data.</li><li>Label examples and opinions.</li></ul></div>
+<div class="guide"><h3>🔴 DON'T</h3><ul><li>Promise or guarantee returns.</li><li>Give personal buy/sell instructions.</li><li>Present predictions as certainty.</li><li>Hide important risks or fees.</li><li>Give personalized financial, tax, or legal advice.</li></ul></div></div>
+<p class="note"><b>Disclaimer:</b> Information published by Financial Furries is for educational and informational purposes only and is not financial, investment, tax, or legal advice. Financial markets involve risk, and past performance does not guarantee future results.</p></section>
 
-<section class="panel">
-<h2 id="heading">Publish a new article</h2>
-<p class="muted">Write your article here. Fill in the title and article text, then tap Publish.</p>
-<form id="form">
-<input type="hidden" id="id">
+<section class="panel"><h2>🔐 Connect GitHub</h2><p class="muted">Shared publishing stores articles in <b>articles.json</b>, so everyone can see them. Use a fine-grained token limited to this repository with Contents read/write. Do not save the token in source code.</p>
+<label>GitHub token</label><input id="token" type="password" placeholder="Paste token for this session only">
+<button class="primary" id="connect">Connect & load articles</button><button class="secondary" id="forget">Forget token</button><div id="connectStatus" class="status"></div></section>
 
-<label for="title">Article title *</label>
-<input id="title" required placeholder="Example: Why gold prices are rising">
+<section class="panel"><h2 id="heading">Publish a new article</h2><form id="form"><input type="hidden" id="id">
+<label>Article title *</label><input id="title" required>
+<div class="grid"><div><label>Category</label><select id="category"><option>Markets</option><option>Money</option><option>Business</option><option>Investing</option><option>Technology</option><option>World</option><option>Opinion</option><option>News</option></select></div><div><label>Author</label><input id="author" placeholder="Your name"></div></div>
+<label>Cover image URL</label><input id="image"><label>Short description</label><textarea id="excerpt"></textarea><label>Article text *</label><textarea id="content" required style="min-height:260px"></textarea>
+<button class="primary" id="save" type="submit">Publish article</button><button class="secondary" id="clear" type="button">Clear</button><div id="status" class="status"></div></form></section>
 
-<div class="grid">
-<div><label for="category">Category</label><select id="category"><option>Markets</option><option>Money</option><option>Business</option><option>Investing</option><option>Technology</option><option>World</option><option>Opinion</option><option>News</option></select></div>
-<div><label for="author">Author</label><input id="author" placeholder="Your name"></div>
-</div>
+<section class="panel"><h2>🇮🇳 English → Hindi translation</h2><p class="muted">Paste English article text and translate it. Proofread financial terms, names, dates, percentages and numbers before publishing.</p>
+<label>English</label><textarea id="translateInput" style="min-height:220px"></textarea><button class="primary" id="translate">Translate to Hindi</button><button class="secondary" id="copyHindi">Copy Hindi</button>
+<label>Hindi</label><textarea id="hindiOutput" style="min-height:220px"></textarea></section>
 
-<label for="image">Cover image URL <span class="muted">(optional)</span></label>
-<input id="image" placeholder="https://...">
-
-<label for="excerpt">Short description</label>
-<textarea id="excerpt" rows="4" placeholder="A short summary that will appear on the homepage"></textarea>
-
-<label for="content">Article text *</label>
-<textarea id="content" rows="16" required placeholder="Write your full article here..."></textarea>
-
-<div class="actions">
-<button class="primary" type="submit" id="save">Publish article</button>
-<button class="secondary" type="button" id="clear">Clear</button>
-</div>
-<div id="status" class="status" role="status"></div>
-</form>
-</section>
-
-<section class="panel">
-<h2>Your articles</h2>
-<div id="list"><p class="muted">No articles yet.</p></div>
-</section>
+<section class="panel"><h2>Published articles</h2><div id="list" class="muted">Connect to GitHub to load articles.</div></section>
 </main>
-
 <script>
-const KEY="financialFurriesArticles";
-const $=id=>document.getElementById(id);
-const get=()=>{try{return JSON.parse(localStorage.getItem(KEY)||"[]")}catch(e){return[]}};
-const put=a=>{localStorage.setItem(KEY,JSON.stringify(a));render()};
-const esc=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
-function resetForm(){
- $("form").reset();$("id").value="";
- $("heading").textContent="Publish a new article";$("save").textContent="Publish article";
- $("status").textContent="";
-}
-function render(){
- const a=get(), list=$("list");
- if(!a.length){list.innerHTML='<p class="muted">No articles yet. Publish your first article above.</p>';return}
- list.innerHTML=a.slice().reverse().map(x=>`
- <div class="article">
-   <div><div class="article-title">${esc(x.title)}</div><div class="article-meta">${esc(x.category)} · ${esc(x.date)}${x.author?" · "+esc(x.author):""}</div></div>
-   <div class="article-actions">
-    <button class="secondary" onclick="editArticle('${esc(x.id)}')">Edit</button>
-    <button class="danger" onclick="deleteArticle('${esc(x.id)}')">Delete</button>
-   </div>
- </div>`).join("");
-}
-function editArticle(id){
- const x=get().find(a=>a.id===id);if(!x)return;
- $("id").value=x.id;$("title").value=x.title;$("category").value=x.category||"News";
- $("author").value=x.author||"";$("image").value=x.image||"";$("excerpt").value=x.excerpt||"";$("content").value=x.content||"";
- $("heading").textContent="Edit article";$("save").textContent="Save changes";
- window.scrollTo({top:0,behavior:"smooth"});
-}
-function deleteArticle(id){
- if(!confirm("Delete this article?"))return;
- put(get().filter(a=>a.id!==id));
-}
-$("form").addEventListener("submit",e=>{
- e.preventDefault();
- const a=get(), id=$("id").value||"article-"+Date.now();
- const item={id,title:$("title").value.trim(),category:$("category").value,author:$("author").value.trim(),image:$("image").value.trim(),excerpt:$("excerpt").value.trim(),content:$("content").value.trim(),date:new Date().toLocaleDateString(),published:true};
- const i=a.findIndex(x=>x.id===id);
- if(i>=0)a[i]=item;else a.push(item);
- put(a);
- $("status").textContent="✓ Article published successfully.";
- resetForm();
- $("status").textContent="✓ Article published successfully.";
-});
-$("clear").onclick=resetForm;
+const OWNER="financialfurries09",REPO="financial-furries",BRANCH="main",PATH="articles.json";let token="",sha="",articles=[];
+const $=id=>document.getElementById(id),esc=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
+async function api(url,opt={}){return fetch(url,{...opt,headers:{Accept:"application/vnd.github+json","X-GitHub-Api-Version":"2022-11-28",...(token?{Authorization:"Bearer "+token}:{}),...(opt.headers||{})}})}
+async function load(){let r=await api(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${PATH}?ref=${BRANCH}`);if(r.status===404){articles=[];sha="";render();return}if(!r.ok)throw Error("GitHub read failed: "+r.status);let d=await r.json();sha=d.sha;let raw=atob(d.content.replace(/\n/g,""));articles=(JSON.parse(raw).articles||[]);render()}
+function render(){let l=$("list");if(!articles.length){l.textContent="No shared articles yet.";return}l.innerHTML=articles.slice().reverse().map(a=>`<div class="article"><b>${esc(a.title)}</b><div class="meta">${esc(a.category)} · ${esc(a.date)}${a.author?" · "+esc(a.author):""}</div><button class="secondary" onclick="editArticle('${esc(a.id)}')">Edit</button><button class="danger" onclick="delArticle('${esc(a.id)}')">Delete</button></div>`).join("")}
+function reset(){form.reset();$("id").value="";$("heading").textContent="Publish a new article";$("save").textContent="Publish article"}
+function editArticle(id){let a=articles.find(x=>x.id===id);if(!a)return;$("id").value=a.id;$("title").value=a.title||"";$("category").value=a.category||"News";$("author").value=a.author||"";$("image").value=a.image||"";$("excerpt").value=a.excerpt||"";$("content").value=a.content||"";$("heading").textContent="Edit article";$("save").textContent="Save changes";scrollTo(0,0)}
+async function saveFile(msg){let bytes=new TextEncoder().encode(JSON.stringify({updated:new Date().toISOString(),articles},null,2));let bin="";bytes.forEach(b=>bin+=String.fromCharCode(b));let body={message:msg,content:btoa(bin),branch:BRANCH};if(sha)body.sha=sha;let r=await api(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${PATH}`,{method:"PUT",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});if(!r.ok)throw Error("GitHub publish failed: "+r.status);let d=await r.json();sha=d.content.sha}
+$("connect").onclick=async()=>{token=$("token").value.trim();try{await load();$("connectStatus").textContent="✓ Connected. Shared articles loaded."}catch(e){token="";$("connectStatus").textContent=e.message;$("connectStatus").className="status error"}};
+$("forget").onclick=()=>{$("token").value="";token="";articles=[];sha="";render();$("connectStatus").textContent="Token cleared."};
+$("form").onsubmit=async e=>{e.preventDefault();if(!token){$("status").textContent="Connect GitHub first.";return}let id=$("id").value||"article-"+Date.now(),item={id,title:$("title").value.trim(),category:$("category").value,author:$("author").value.trim(),image:$("image").value.trim(),excerpt:$("excerpt").value.trim(),content:$("content").value.trim(),date:new Date().toLocaleDateString(),published:true},i=articles.findIndex(x=>x.id===id);if(i>=0)articles[i]=item;else articles.push(item);try{await saveFile(i>=0?"Edit published article":"Publish new article");render();reset();$("status").textContent="✓ Published to the shared website."}catch(e){$("status").textContent=e.message;$("status").className="status error"}};
+$("clear").onclick=reset;
+$("translate").onclick=async()=>{let t=$("translateInput").value.trim();if(!t)return;$("hindiOutput").value="Translating…";try{let r=await fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=hi&dt=t&q="+encodeURIComponent(t));let d=await r.json();$("hindiOutput").value=d[0].map(x=>x[0]).join("")}catch(e){$("hindiOutput").value="Translation failed. Try a shorter text or check your connection."}};
+$("copyHindi").onclick=()=>navigator.clipboard.writeText($("hindiOutput").value);
 render();
-</script>
-</body>
-</html>
+</script></body></html>
